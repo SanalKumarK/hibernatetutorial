@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <!-- "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" -->
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "classpath://org/hibernate/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.cat.model.Users" table="USERS">
+        <meta attribute="class-description">
+            This class contains the users detail.
+        </meta>
+        <id name="id" type="int" column="id">
+            <!--<generator class="native"/>-->
+        </id>
+        <!--<property name="id" column="id" type="int"/>-->
+        <property name="name" column="name" type="string"/>
+        <property name="age" column="age" type="int"/>
+    </class>
+</hibernate-mapping>
